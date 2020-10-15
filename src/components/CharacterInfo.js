@@ -17,7 +17,7 @@ export default function CharacterInfo ({character}){
                         <p>Gender: {gender}</p>
                     </CharStatus>
                 </div>
-                <img src={(image)}/>
+                <img src={(image)} alt={""}/>
             </CharacterCard>
         </div>
     );
