@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-
+import CharacterInfo from "./CharacterInfo";
 
 export default function CharacterList(){
     const [characters, setCharacters] = useState([]);
@@ -11,9 +11,9 @@ export default function CharacterList(){
                setCharacters(response.data.results))
 
     }, []);
-    return (<div>
+    return (<main>
         {
-            characters.map(character => <div>{character.name}</div>)
+            characters.map(character => <CharacterInfo key={character.id} character={character}/>)}
         }
-    </div>)
+    </main>)
 }
