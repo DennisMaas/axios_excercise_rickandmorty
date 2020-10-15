@@ -2,12 +2,13 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import CharacterInfo from "./CharacterInfo";
 import Pagination from "./Pagination";
+import {ListStyling} from "../styles/ListStyling";
 
 export default function CharacterList(){
 
     const [characters, setCharacters] = useState([]);
     const [infos, setInfos] = useState([])
-    const [url, setUrl] = useState("https://rickandmortyapi.com/api/character");
+    const [url, setUrl] = useState("https://rickandmortyapi.com/api/character/");
 
     useEffect(()=> {
         axios.get(url)
@@ -29,10 +30,10 @@ export default function CharacterList(){
 
 
     return (<>
-        <main>
+        <ListStyling>
             {
                 characters.map(character => <CharacterInfo key={character.id} character={character}/>)}
-        </main>
+        </ListStyling>
     <Pagination onNext={onNext} onPrev={onPrev}></Pagination>
         </>
 );

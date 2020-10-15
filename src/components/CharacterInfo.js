@@ -1,16 +1,18 @@
 import React from "react";
-import {CharacterCard} from "../styles/CharacterCard";
+import {CharacterImage} from "../styles/CharacterImage";
 
 export default function CharacterInfo ({character}){
-    const {name,status,gender, image} = character;
+    const {name, image, status, gender, species, type} = character;
 
     return (
         <div>
+            <CharacterImage src={(image)} alt={""}/>
+            <p>{name}</p>
 
-                    {name}
-                    <img src={(image)} alt={""}/>
-                        <p>Status: {status}</p>
-                        <p>Gender: {gender}</p>
+            <p>Status: {status}</p>
+            <p>Gender: {gender}</p>
+            <p>Species: {species}</p>
+            <p>Type: {type}</p>
 
 
         </div>
