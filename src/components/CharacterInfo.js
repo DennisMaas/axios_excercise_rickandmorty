@@ -1,8 +1,7 @@
-
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
-import CharacterCard from "../Styles/CharacterCard";
+import CharacterCard from "../styles/CharacterCard";
 
 export default function CharacterInfo ({character}){
     const {name,status,gender, image} = character;
@@ -10,28 +9,25 @@ export default function CharacterInfo ({character}){
     return (
         <div>
             <CharacterCard>
-                <div>
                     <CharName>{name}</CharName>
+                    <Image src={(image)} alt={""}/>
                     <CharStatus>
                         <p>Status: {status}</p>
                         <p>Gender: {gender}</p>
                     </CharStatus>
-                </div>
-                <img src={(image)} alt={""}/>
             </CharacterCard>
         </div>
     );
 }
 
 export const CharStatus = styled.div`
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 0 0 0 10px
+
 `
 
 export const CharName = styled.h2`
-    display: flex;
-    text-align: center;
-    margin: 10px 0 0 10px
+
+`
+
+export const Image = styled.img`
+width: 20vmax;
 `
