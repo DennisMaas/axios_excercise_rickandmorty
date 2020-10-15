@@ -6,7 +6,6 @@ import CharacterInfo from "./CharacterInfo";
 export default function CharacterList(){
 
     const [characters, setCharacters] = useState([]);
-
     useEffect(()=> {
         let url = "https://rickandmortyapi.com";
         axios.get(url + "/api/character")
