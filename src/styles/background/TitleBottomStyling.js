@@ -1,11 +1,6 @@
-import React from "react";
-
 import styled from "styled-components/macro";
 
-export default function TitleMiddle () {
-    return <TitleMiddleStyling>Rick and Morty</TitleMiddleStyling>
-}
-export const TitleMiddleStyling = styled.div`
+export const TitleBottomStyling = styled.div`
   position: absolute;
   bottom: 0.8em;
   width: 100%;
@@ -13,6 +8,6 @@ export const TitleMiddleStyling = styled.div`
   font-family: 'Get Schwifty', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 10em;
   color: #08BAE3;
-  -webkit-text-stroke: 0.1em #FFF765;
-  z-index: 49;
+  -webkit-text-stroke: 0.4em black;
+  z-index: 48;
 `

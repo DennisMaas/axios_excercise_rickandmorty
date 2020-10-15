@@ -1,19 +1,23 @@
 import React from 'react';
 import styled from "styled-components/macro";
-import {PortalStyle} from "./styles/PortalStyles";
-import {DivContainer} from "./styles/DivContainer";
-import Title from "./components/Title";
-import TitleMiddle from "./components/TitleMiddle";
-import TitleBottom from "./components/TitleBottom";
+import {PortalStyle} from "./styles/background/PortalStyles";
+import {DivContainer} from "./styles/background/DivContainer";
+import {TitleStyling} from "./styles/background/TitleStyling";
+import {TitleMiddleStyling} from "./styles/background/TitleMiddleStyling";
+import {TitleBottomStyling} from "./styles/background/TitleBottomStyling";
+import {Span} from "./styles/background/Span";
+import CharacterInfo from "./components/CharacterInfo";
+import CharacterList from "./components/CharacterList";
 
 function App() {
   return (
     <FakeBody>
         <DivContainer>
             <PortalStyle></PortalStyle>
-            <Title></Title>
-            <TitleMiddle></TitleMiddle>
-            <TitleBottom></TitleBottom>
+            <CharacterList></CharacterList>
+            <TitleStyling>Rick <Span>and</Span> Morty</TitleStyling>
+            <TitleMiddleStyling>Rick <Span>and</Span> Morty</TitleMiddleStyling>
+            <TitleBottomStyling>Rick <Span>and</Span> Morty</TitleBottomStyling>
          </DivContainer>
     </FakeBody>
   );
@@ -22,6 +26,7 @@ function App() {
 export default App;
 
 export const FakeBody = styled.body`
-background-color: black;
-font-size: 0.9vw;
+    background: url("https://source.unsplash.com/RF4p4rTM-2s/1280x720") no-repeat center fixed;
+    background-size: cover;
+    font-size: 0.9vw;
 `
