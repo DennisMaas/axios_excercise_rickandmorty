@@ -13,8 +13,10 @@ function App() {
   return (
     <FakeBody>
         <DivContainer>
-            <PortalStyle></PortalStyle>
-            <CharacterList></CharacterList>
+            <PortalStyle>
+                <CharacterList></CharacterList>
+            </PortalStyle>
+
             <TitleStyling>Rick <Span>and</Span> Morty</TitleStyling>
             <TitleMiddleStyling>Rick <Span>and</Span> Morty</TitleMiddleStyling>
             <TitleBottomStyling>Rick <Span>and</Span> Morty</TitleBottomStyling>
