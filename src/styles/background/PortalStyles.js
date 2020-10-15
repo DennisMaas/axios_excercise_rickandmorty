@@ -24,7 +24,7 @@ export const PortalStyle = styled.div`
     radial-gradient(circle at 20% 51%, #FDFEB4 2%, transparent 2%),
     radial-gradient(circle at 53% 51%, transparent 64%, #43A93E 64%),
     radial-gradient(circle at 47% 59%, transparent 64%, #43843E 64%),
-    radial-gradient(circle at 47% 60%, transparent 59%, #1A9042 59%),
+    radial-gradient(circle at 47% 60%, transparent 59%, #1a9042 59%),
     radial-gradient(circle at 50% 59%, transparent 55%, #1B863C 55%),
     radial-gradient(circle at 45% 60%, transparent 55%, #399C49 55%),
     radial-gradient(circle at 47% 60%, transparent 46%, #1A9042 46%),

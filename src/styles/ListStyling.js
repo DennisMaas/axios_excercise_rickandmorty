@@ -9,5 +9,4 @@ export const ListStyling = styled.main`
   left: 50%;
   transform: translateX(-50%);
   top: 10%;
-
 `
